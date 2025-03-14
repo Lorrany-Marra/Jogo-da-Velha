@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(90deg, #000428, #004e92);
+    color: #0ff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilo para a tela de escolha */
+#escolha-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0ff;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background: #0ff;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px #0ff;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+button:hover {
+    background: #00f;
+    color: #fff;
+    box-shadow: 0 0 20px #00f;
+}
+
+/* Estilo do Tabuleiro */
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0ff;
+}
+
+.celula {
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 3px solid #0ff;
+    font-size: 3em;
+    font-weight: bold;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.celula:hover {
+    background: rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 15px #0ff;
+}
