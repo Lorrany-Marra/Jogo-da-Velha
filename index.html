@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+
+    <!-- Tela de Escolha -->
+    <div id="escolha-container">
+        <h2>Escolha seu símbolo:</h2>
+        <button onclick="escolherSimbolo('X')">X</button>
+        <button onclick="escolherSimbolo('O')">O</button>
+    </div>
+    <h1>L.M</h1>
+
+    <!-- Jogo (inicialmente oculto) -->
+    <div id="jogo-container" class="hidden">
+        <div class="tabuleiro">
+            <div class="celula" onclick="fazerJogada(0)"></div>
+            <div class="celula" onclick="fazerJogada(1)"></div>
+            <div class="celula" onclick="fazerJogada(2)"></div>
+            <div class="celula" onclick="fazerJogada(3)"></div>
+            <div class="celula" onclick="fazerJogada(4)"></div>
+            <div class="celula" onclick="fazerJogada(5)"></div>
+            <div class="celula" onclick="fazerJogada(6)"></div>
+            <div class="celula" onclick="fazerJogada(7)"></div>
+            <div class="celula" onclick="fazerJogada(8)"></div>
+        </div>
+        <h2 id="mensagem"></h2>
+        <button onclick="reiniciarJogo()">Reiniciar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
