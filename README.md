@@ -16,6 +16,7 @@ Este é um jogo da velha interativo onde dois jogadores podem competir. Foi dese
     Escolha quem será X e quem será O.
     Clique em uma célula para marcar sua jogada.
     O jogo verificará automaticamente se alguém venceu ou se deu empate.
+
     Divirta-se! 🎉
 
 📸 Imagem do Jogo
